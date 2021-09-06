@@ -119,7 +119,7 @@ function buildCharts(sample) {
        marker: {
          size: bubbleValues,
          color: bubbleValues,
-         colorscale: "Portland" 
+         
        }
     }];
 
