@@ -3,14 +3,14 @@ function init() {
   var selector = d3.select("#selDataset");
 
  // Use the list of sample names to populate the select options
- d3.json("JS/samples/samples.json").then((data) => {
-  var sampleNames = data.names;
+    d3.json("samples.json").then((data) => {
+      var sampleNames = data.names;
 
-  sampleNames.forEach((sample) => {
-    selector
-      .append("option")
-      .text(sample)
-      .property("value", sample);
+      sampleNames.forEach((sample) => {
+       selector
+         .append("option")
+         .text(sample)
+         .property("value", sample);
   });
 
     // Use the first sample from the list to build the initial plots
@@ -101,7 +101,7 @@ function buildCharts(sample) {
      Plotly.newPlot("bar", barData, barLayout);
 
 
-
+    });
 
      
 // Bar and Bubble charts
@@ -110,9 +110,6 @@ function buildCharts(sample) {
   // Use d3.json to load and retrieve the samples.json file 
   d3.json("samples.json").then((data) => {
     
-
-    // Deliverable 1 Step 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot(); 
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
