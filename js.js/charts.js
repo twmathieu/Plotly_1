@@ -68,9 +68,8 @@ function buildCharts(sample) {
     var  ids = result.otu_ids;
     var labels = result.otu_labels.slice(0, 10).reverse();
     var values = result.sample_values.slice(0,10).reverse();
-
-    var bubbleLabels = result.otu_labels;
-    var bubbleValues = result.sample_values;
+    
+    ;
 
 
     // 7. Create the yticks for the bar chart.
