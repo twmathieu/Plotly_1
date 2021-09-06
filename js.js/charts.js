@@ -86,7 +86,7 @@ function buildCharts(sample) {
       x: values,
       y: yticks,
       type: "bar",
-      orientation: "horizontal",
+      orientation: "h",
       text: labels 
     }];
 
