@@ -72,9 +72,7 @@ function buildCharts(sample) {
     // 7. Create the yticks for the bar chart.
    
 
-    var yticks = ids.map(sampleObj => "OTU " + sampleObj).slice(0,10).reverse();
-
-    console.log(yticks)
+    
 
     // 8. Create the trace for the bar chart. 
     
